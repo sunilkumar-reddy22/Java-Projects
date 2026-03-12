@@ -5,7 +5,7 @@ public class ApointmentBooking {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Booking Appoinment");
+        System.out.println("Welcome to Booking Appointment");
         System.out.println("Enter Name: ");
         String name = in.nextLine();
         System.out.println("Enter Phone Number: ");
@@ -28,41 +28,41 @@ public class ApointmentBooking {
         switch (choice) {
 
             case 1:
-                bookappoinment(name, phone, "Pediatrics");
+                bookappointment(name, phone, "Pediatrics");
                 break;
 
             case 2:
-                bookappoinment(name, phone, "Cardiology");
+               bookappointment (name, phone, "Cardiology");
                 break;
 
             case 3:
-                bookappoinment(name, phone, "General Medical");
+              bookappointment  (name, phone, "General Medical");
                 break;
 
             case 4:
-                bookappoinment(name, phone, "Neurology");
+               bookappointment (name, phone, "Neurology");
                 break;
 
             case 5:
-                bookappoinment(name, phone, "Psychiatry");
+                bookappointment(name, phone, "Psychiatry");
                 break;
 
             case 6:
-                bookappoinment(name, phone, "Urology");
+                bookappointment(name, phone, "Urology");
                 break;
             default:
-                System.out.println("Invaild! Check again");
+                System.out.println("Invalid! Check again");
         }
     }
 
-    static void bookappoinment(String name, String phone, String department) {
+    static void bookappointment(String name, String phone, String department) {
         Random rand = new Random();
         int appointmentid = rand.nextInt(9000) + 1000;
-        System.out.println("Your Appoinment Booked Successfully!");
+        System.out.println("Your Appointment Booked Successfully!");
         System.out.println("Name: " + name);
         System.out.println("Phone: " + phone);
         System.out.println("Department: " + department);
-        System.out.println("appointmentid: " + appointmentid);
+        System.out.println("Appointment id: " + appointmentid);
     }
 }
 
