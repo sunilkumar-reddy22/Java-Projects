@@ -14,6 +14,7 @@ public class ApointmentBooking {
         choosedepartment(name, phone);
     }
 
+
     static void choosedepartment(String name, String phone) {
         System.out.println("Select Department");
         System.out.println("1.Pediatrics");
