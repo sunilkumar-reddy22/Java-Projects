@@ -140,10 +140,4 @@ public class UserBooking {
             }
         }
 
-
-
-
-
-
-
 }
